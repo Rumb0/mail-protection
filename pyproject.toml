@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mail-filer"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "mail_filer"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+aiosmtpd = "^1.4.4.post2"
+fastapi = "^0.97.0"
+motor = "^3.1.2"
+aiohttp = "^3.8.4"
+pytest = "^7.3.2"
+pydnsbl = "^1.1.5"
+skops = "^0.7.post0"
+tensorflow = "^2.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
